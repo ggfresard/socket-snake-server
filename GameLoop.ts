@@ -6,7 +6,7 @@ export class GameLoop {
     nextTick = false
     playing = true
 
-    constructor(loop: (delta: number) => void, fps = 30) {
+    constructor(loop: (delta: number) => void, fps = 10) {
         this.loopFunction = loop
         this.interval = 1000 / fps
         this.start = this.then = Date.now()

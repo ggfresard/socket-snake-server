@@ -29,7 +29,7 @@ export class Player implements IPlayer {
         this.socket = socket
         this.channel = channel
         this.id = id
-        this.speed = speed ?? 10
+        this.speed = speed ?? 3
         this.counter = 0
         this.direction = direction ?? { x: 1, y: 0 }
         this.forbiddenDirection = { x: this.direction?.x, y: -this.direction.y }
