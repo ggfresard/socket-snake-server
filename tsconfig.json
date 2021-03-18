@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      "target": "es2017",
+      "module": "commonjs",
+      "baseUrl": "./",
+      "outDir": "./dist",
+      "jsx": "react",
+      "strict": true,
+      "noImplicitAny": false,
+      "allowSyntheticDefaultImports": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "allowJs": true,
+      "typeRoots": [
+        "./node_modules/@types/",
+        "./types/"
+      ],
+      "paths": {
+        "*": [
+          "node_modules/",
+        ]
+      }
+    },
+    "exclude": [
+        "dist",
+        "**/*.spec.ts"
+    ]
+  }
