@@ -126,7 +126,7 @@ export default class GameGrid {
 
             }
             this.players.forEach(p => p.socket.emit('step', state))
-        }, 60)
+        }, 30)
     }
 
     private startGame = () => {
